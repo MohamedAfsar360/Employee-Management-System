@@ -1,7 +1,7 @@
-package project1;
+package employee;
 import java.util.Scanner;
-public class Main {
-	EmployeeService service=new EmployeeService();
+public class employeeMain {
+	EmployeeService1 service=new EmployeeService1();
 	static boolean ordering = true;
 	public static void menu() {
         System.out.println("*****Welcome To Employee Managment System **** "
@@ -12,11 +12,9 @@ public class Main {
         		+ "\n	5.View All Employee"
         		+ "\n	6.Exist ");
     }
-
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		EmployeeService service=new EmployeeService();
-
+		EmployeeService1 service=new EmployeeService1();
 		do {
 			menu();
 			System.out.println("Enter your CHOICE");
