@@ -1,6 +1,6 @@
-package project1;
+package employee;
 
-public class Employee {
+public class Employee1 {
 
 	private int id;
 	private String name;
@@ -49,7 +49,7 @@ public class Employee {
 		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", desiganation=" + desiganation
 				+ ", department=" + department + ", salary=" + salary + "]\n\n";
 	}
-	public Employee(int id, String name, int age, String desiganation, String department, double salary) {
+	public Employee1(int id, String name, int age, String desiganation, String department, double salary) {
 		super();
 		this.id = id;
 		this.name = name;
