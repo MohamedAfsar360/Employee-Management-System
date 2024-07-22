@@ -1,19 +1,19 @@
-package project1;
+package employee;
 
 
 import java.util.HashSet;
 import java.util.Scanner;
 
 
-public class EmployeeService {
+public class EmployeeService1 {
 
-	HashSet<Employee> empset=new HashSet<Employee>();
+	HashSet<Employee1> empset=new HashSet<Employee1>();
 
-	Employee emp1=new Employee(101, "Afsar", 21, "Developer", "IT", 30000);
-	Employee emp2=new Employee(102, "Shuail", 22, "Tester","CO", 35000);
-	Employee emp3=new Employee(103, "Avinash", 22, "Tester","co", 35000);
-	Employee emp4=new Employee(104, "halith", 21, "System Eng","CO",  70000);
-	Employee emp5=new Employee(105, "chetta", 22, "developer","IT",  30000);
+	Employee1 emp1=new Employee1(101, "Afsar", 21, "Developer", "IT", 30000);
+	Employee1 emp2=new Employee1(102, "Shuail", 22, "Tester","CO", 35000);
+	Employee1 emp3=new Employee1(103, "Avinash", 22, "Tester","co", 35000);
+	Employee1 emp4=new Employee1(104, "halith", 21, "System Eng","CO",  70000);
+	Employee1 emp5=new Employee1(105, "chetta", 22, "developer","IT",  30000);
 
 	Scanner sc=new Scanner(System.in);
 	boolean found=false;
@@ -25,7 +25,7 @@ public class EmployeeService {
 	String desiganation;
 	double sal;
 
-	public EmployeeService() {
+	public EmployeeService1() {
 
 		empset.add(emp1);
 		empset.add(emp2);
@@ -36,7 +36,7 @@ public class EmployeeService {
 
 	//view all employees
 	public void viewAllEmps() {
-		for(Employee emp:empset) {
+		for(Employee1 emp:empset) {
 			System.out.println(emp);
 		}
 	}
@@ -45,7 +45,7 @@ public class EmployeeService {
 		System.out.println("0 is use to exite\n");
 		System.out.println("Enter id: ");
 		id=sc.nextInt();
-		for(Employee emp:empset) {
+		for(Employee1 emp:empset) {
 			if(emp.getId()==id) {
 				System.out.println(emp);
 				found=true;
@@ -69,7 +69,7 @@ public class EmployeeService {
 		System.out.println("Enter id: ");
 		id=sc.nextInt();
 		boolean found=false;
-		for(Employee emp:empset) {
+		for(Employee1 emp:empset) {
 			if(emp.getId()==id) {
 				System.out.println("Enter name: ");
 				name=sc.next();
@@ -102,8 +102,8 @@ public class EmployeeService {
 		System.out.println("Enter id");
 		id=sc.nextInt();
 		boolean found=false;
-		Employee empdelete=null;
-		for(Employee emp:empset) {
+		Employee1 empdelete=null;
+		for(Employee1 emp:empset) {
 			if(emp.getId()==id) {
 				empdelete=emp;
 				found=true;
@@ -149,7 +149,7 @@ public class EmployeeService {
 		System.out.println("Enter salary");
 		sc.nextDouble();
 		System.out.print("\n");
-		Employee emp=new Employee(id, name, age, desiganation, department, sal);
+		Employee1 emp=new Employee1(id, name, age, desiganation, department, sal);
 		empset.add(emp);
 		System.out.println(emp);
 		System.out.println("Employtee addeed successsfully");
